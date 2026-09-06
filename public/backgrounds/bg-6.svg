@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="sky_6" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9f1239" />
+      <stop offset="60%" stop-color="#2b0914" />
+      <stop offset="100%" stop-color="#050508" />
+    </linearGradient>
+    <radialGradient id="spotlight_6" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#fb7185" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#9f1239" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.95" />
+    </radialGradient>
+  </defs>
+
+  <!-- Sky Base -->
+  <rect width="1920" height="1080" fill="url(#sky_6)" />
+  <rect width="1920" height="1080" fill="url(#spotlight_6)" />
+
+  <!-- Atmospheric Bollywood Light Beams -->
+  <g opacity="0.18">
+    <polygon points="960,0 200,1080 400,1080" fill="#fb7185" />
+    <polygon points="960,0 1520,1080 1720,1080" fill="#fb7185" />
+    <polygon points="960,0 700,1080 1220,1080" fill="#ffffff" />
+  </g>
+
+  <!-- Silhouetted Skyline & Theatrical Curtains -->
+  <g fill="#050508" opacity="0.75">
+    <rect x="0" y="850" width="1920" height="230" />
+    <!-- Distant city / studio pillars -->
+    <rect x="180" y="740" width="80" height="110" />
+    <rect x="290" y="710" width="120" height="140" />
+    <rect x="440" y="760" width="70" height="90" />
+    <rect x="1400" y="720" width="110" height="130" />
+    <rect x="1540" y="690" width="140" height="160" />
+    <rect x="1710" y="750" width="80" height="100" />
+  </g>
+
+  <!-- Subtle Theatrical Arch frame -->
+  <path d="M 0,0 Q 960,240 1920,0 L 1920,1080 L 0,1080 Z" fill="none" stroke="#fb7185" stroke-width="1.5" opacity="0.25"/>
+
+  <!-- Dark Cinematic Edge Vignette -->
+  <radialGradient id="edgeVignette" cx="50%" cy="50%" r="70%">
+    <stop offset="50%" stop-color="#000000" stop-opacity="0" />
+    <stop offset="100%" stop-color="#000000" stop-opacity="0.8" />
+  </radialGradient>
+  <rect width="1920" height="1080" fill="url(#edgeVignette)" />
+</svg>
